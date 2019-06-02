@@ -53,7 +53,7 @@ if __name__ == '__main__':
     print( 'read data')
 
     time_1 = time.time()
-
+    # input data
     raw_data = pd.read_csv('train_binary.csv', header=0)
     data = raw_data.values
 
@@ -74,7 +74,7 @@ if __name__ == '__main__':
     time_3 = time.time()
     print( 'training cost ', time_3 - time_2, ' second', '\n')
 
-    print( 'Start predicting')
+    print( 'predicting')
     test_predict = p.predict(test_features)
     time_4 = time.time()
     print( 'predicting cost ', time_4 - time_3, ' second', '\n')
