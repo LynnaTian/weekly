@@ -20,9 +20,7 @@ def loadDataset(filename, split, trainingSet=[], testSet=[]):
             else:
                 testSet.append(dataset[y])
 
-            # 计算距离
-
-
+ # 计算距离
 def euclideanDistance(instance1, instance2, length):
     distance = 0
     for x in range(length):
